@@ -1,0 +1,21 @@
+{
+    "name": "Tab Close Timer",
+    "description": "Closes the tab after specified time!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "scripting",
+        "alarms"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}
